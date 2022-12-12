@@ -49,6 +49,12 @@ function createToast(situation,message){
        let toast= document.querySelector(".toast")
         toast.remove()
     },duration.value)
+
+    let cancelButton=document.querySelector(".cancel-button")
+    cancelButton.addEventListener("click",function(){
+        let toast= document.querySelector(".toast")
+        toast.remove()
+    })
 }
 
 clearButton.addEventListener("click",function(){
